@@ -1,0 +1,18 @@
+.navbar-brand {
+    margin-left: 5%;
+    color: azure;
+}
+
+.btn-dark {
+    margin-right: 5%;
+    color: azure;
+}
+
+.container {
+    text-align: center;
+    margin-top: 10%;
+}
+
+h3 {
+    margin-top: 2%;
+}

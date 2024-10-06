@@ -1,0 +1,18 @@
+.navbar-brand{
+    margin-left: 5%;
+    color: azure;
+}
+
+h1{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.login{
+    margin-left: 34%;
+}
+
+.signup{
+    margin-left: 21%;
+}
