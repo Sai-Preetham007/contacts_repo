@@ -36,6 +36,18 @@ def login_verify(request):
                 user_name = user.First_Name
                 return render(request, "contacts/home.html", {"user_name":user_name})
             else:
-                return HttpResponse("Invalid email or password")
+                return render(request, "contacts/login.html", {"error_msg":"Invalid email or password."})
         except User.DoesNotExist:
-            return HttpResponse("Invalid email or password")
+            return render(request, "contacts/login.html", {"error_msg":"Invalid email or password."})
+        
+def display(request):
+    return render(request, "buttons/display.html")
+
+def add(request):
+    return render(request, "buttons/add.html")
+
+def modify(request):
+    return render(request, "buttons/modify.html")
+
+def delete(request):
+    return render(request, "buttons/delete.html")

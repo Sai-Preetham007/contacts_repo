@@ -13,14 +13,28 @@
         <a class="navbar-brand" href="#">Home</a>
         <button class="btn btn-dark"><a class="nav-link" href="{% url 'index' %}">Logout</a></button>
     </div>
-    <div class="container">
-        <h1>Welcome {{user_name}}</h1>
-        <h3>
-            <button class="btn btn-info me-3">Display</button>
-            <button class="btn btn-success me-3">Add</button>
-            <button class="btn btn-primary me-3">Modify</button>
-            <button class="btn btn-danger me-3">Delete</button>
-        </h3>
+    <div class="display">
+        <h1>Welcome {{user_name}}</h1><br>
+        <div class="d-inline-block">
+            <form action="{% url 'display' %}" method="POST" class="d-inline-block">
+                {% csrf_token %}
+                <button class="btn btn-info me-3" type="submit">Display</button>
+            </form>
+            <form action="{% url 'add' %}" method="POST" class="d-inline-block">
+                {% csrf_token %}
+                <button class="btn btn-success me-3" type="submit">Add</button>
+            </form>
+            <form action="{% url 'modify' %}" method="POST" class="d-inline-block">
+                {% csrf_token %}
+                <button class="btn btn-primary me-3" type="submit">Modify</button>
+            </form>
+            <form action="{% url 'delete' %}" method="POST" class="d-inline-block">
+                {% csrf_token %}
+                <button class="btn btn-danger" type="submit">Delete</button>
+            </form>
+        </div>
     </div>
+    {% block content %}
+    {% endblock %}
 </body>
 </html>
