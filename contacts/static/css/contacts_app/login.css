@@ -1,0 +1,15 @@
+#one {
+    color: rgb(231, 150, 216);
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+input {
+    border: 5px solid grey;
+    border-style: inset;
+}
+
+p{
+    color: red;
+    margin-right: 3%;
+}

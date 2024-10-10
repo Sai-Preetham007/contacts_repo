@@ -1,0 +1,20 @@
+.navbar {
+    background-color: gray;
+}
+
+.navbar-brand {
+    margin-left: 5%;
+}
+
+.one {
+    text-align: center;
+    margin-top: 10%;
+    h1{
+        color: #090302;
+        margin-bottom: 3%;
+    }
+}
+
+body{
+    background-image: url("../../images/nature.png");
+}

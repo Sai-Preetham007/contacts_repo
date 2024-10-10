@@ -1,0 +1,30 @@
+{% extends 'contacts_app/home.html' %}
+{% load static %}
+{% block display %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- {% block title %}<title>Display</title>{% endblock %} -->
+    <link rel="stylesheet" href="{% static 'css/contacts_app/display.css' %}">
+</head>
+<body>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th style="text-align: end;">Mobile Number</th>
+        </thead>
+
+        <tbody>
+            {% for contact in contacts %}
+                <tr>
+                    <td>{{contact.Full_Name}}</td>
+                    <td style="text-align: end;">{{contact.Mobile_Number}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+{% endblock %}

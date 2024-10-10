@@ -1,0 +1,10 @@
+#one{
+    color: darksalmon;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+input{
+    border: 5px solid grey;
+    border-style: inset;
+}
