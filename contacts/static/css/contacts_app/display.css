@@ -1,0 +1,23 @@
+body {
+    background-image: url("../../images/nature.png");
+
+    table {
+            width: 800px;
+            margin: auto;
+            margin-top: 5%;
+    
+            thead {
+                background-color: #EDAF97;
+                border: 3px solid black;
+                color: crimson;
+            }
+    
+            ;
+            border: 2px solid black;
+    
+            td {
+                color: whitesmoke;
+                background-color: black;
+            }
+        }
+}

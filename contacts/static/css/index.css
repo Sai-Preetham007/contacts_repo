@@ -1,0 +1,25 @@
+.navbar{
+    background-color: gray;
+}
+
+.navbar-brand{
+    margin-left: 5%;
+}
+
+.container{
+    text-align: center;
+    margin-top: 10%;
+    h1{
+        color: rgb(213, 166, 248);
+    }
+}
+
+#login{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#signup{
+    color: whitesmoke;
+    text-decoration: none;
+}
