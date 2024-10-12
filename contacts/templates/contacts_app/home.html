@@ -12,7 +12,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand text-info me-5" href="">$@! **7</a>
-            <a class="nav nav-link text-light" href="{% url 'login_verified' %}">Home</a>
+            <a class="nav nav-link text-light" href="{% url 'home' %}">Home</a>
             <div class="ms-auto me-5">
                 <form action="{% url 'index' %}">
                     <button class="btn btn-danger">Logout</button>
@@ -25,9 +25,9 @@
         <div class="d-inline-block">
             <form action="{% url 'display' %}" method="POST" class="d-inline-block me-2">
                 {% csrf_token %}
-                <button class="btn btn-info">Display</button>
+                <button class="btn" style="background-color: #90FCF9; color: black">Display</button>
             </form>
-            <form action="" method="POST" class="d-inline-block me-2">
+            <form action="{% url 'add' %}" method="POST" class="d-inline-block me-2">
                 {% csrf_token %}
                 <button class="btn btn-success">Add</button>
             </form>
@@ -41,7 +41,7 @@
             </form>
         </div>
     </div>
-    {% block display %}
+    {% block content %}
     {% endblock %}
 </body>
 </html>

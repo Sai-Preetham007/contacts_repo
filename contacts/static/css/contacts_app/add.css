@@ -1,0 +1,10 @@
+h3{
+    margin-top: 5%;
+    text-align: center;
+    color: greenyellow;
+
+    input{
+        background-color: black;
+        color: orange;
+    }
+}
